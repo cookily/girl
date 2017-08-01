@@ -7,9 +7,6 @@
 *.iml
 out
 gen
-.gitignore
-.idea/
-girl.iml
 pom.xml
-src/
+
 target/

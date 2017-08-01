@@ -1,0 +1,18 @@
+spring:
+  profiles:
+    active: dev
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1/dbgirl?characterEncoding=utf8&useSSL=true
+    username: cookily
+    password: 745200
+  jpa:
+    hibernate:
+      #create 每次都重新创建 如果存在，先删除在创建
+      #update 如果存在，不创建
+      #create-drop 停止会删除表
+      #validate 运行会先验证，不一致就报错
+      ddl-auto: update
+    show-sql: true
+
+
